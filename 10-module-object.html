@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Module Object</title>
+  </head>
+  <body>
+    <script type="module">
+      // module object berfungsi meng import data yang banyak (dari export)
+      import * as rifai from "./scripts/10-module-object.js";
+
+      console.info(rifai.firstName);
+      console.info(rifai.middleName);
+      console.info(rifai.lastName);
+      rifai.hello();
+
+      const person = new rifai.Person();
+      console.info(person);
+    </script>
+  </body>
+</html>

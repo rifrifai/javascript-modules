@@ -7,7 +7,13 @@
   </head>
   <body>
     <script type="module">
-      import { perusahaan, total, Perusahaan } from "./scripts/5-multiple.js";
+      // direkomendasikan pakai alias import
+      import {
+        company as perusahaan,
+        sum as total,
+        Company as Perusahaan,
+      } from "./scripts/5-multiple.js";
+      // import { perusahaan, total, Perusahaan } from "./scripts/5-multiple.js";
 
       console.info(perusahaan);
       console.info(total(10, 10));

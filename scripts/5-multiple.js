@@ -6,4 +6,4 @@ function sum(first, second) {
 
 class Company {}
 
-export { company, sum, Company };
+export { company as perusahaan, sum as total, Company as Perusahaan };
